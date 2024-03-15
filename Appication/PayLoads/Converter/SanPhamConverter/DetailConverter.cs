@@ -10,7 +10,6 @@ namespace Appication.PayLoads.Converter.SanPhamConverter
 {
     public class DetailConverter
     {
-        //hjhjkkjk
         public List<Response_Details> EntityToDTO(List<PropertyDetail> propertyDetails)
         {
             List<Response_Details> list = new List<Response_Details>();
