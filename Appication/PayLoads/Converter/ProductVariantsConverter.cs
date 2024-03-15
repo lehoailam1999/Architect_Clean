@@ -22,5 +22,17 @@ namespace Application.PayLoads.Converter
             
             return response;
         }
+        public Response_ProductVariants EntityToDTOVariantProperty(ProductVariant pv)
+        {
+            Response_ProductVariants response = new Response_ProductVariants()
+            {
+                VariantName = pv.VariantName,
+                Price = pv.Price,
+                ShellPrice = pv.ShellPrice,
+                Quanlity = pv.Quantity
+            };
+
+            return response;
+        }
     }
 }

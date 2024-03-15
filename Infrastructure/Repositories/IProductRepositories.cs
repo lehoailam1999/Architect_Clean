@@ -10,5 +10,11 @@ namespace Infrastructure.Interface
     public interface IProductRepositories
     {
         Product GetProductById(int id);
+        IEnumerable<Product> GetAllProducts();
+        IEnumerable<Product> GetAllProductInformation();
+        IEnumerable<Product> GetProductWithQuantity(int id);
+        IEnumerable<Product> GetProductWithPrice(decimal giadau,decimal giacuoi);
+        bool AddProduct(Product p);
+
     }
 }
